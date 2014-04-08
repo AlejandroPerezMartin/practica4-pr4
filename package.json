@@ -1,0 +1,12 @@
+{
+  "name": "practica4",
+  "author": "Alejandro Perez Martin",
+  "description": "Small project for university subject",
+  "main": "index.html",
+  "version": "1.0.0",
+  "devDependencies": {
+    "grunt": "latest",
+    "grunt-contrib-nodeunit": "latest",
+    "grunt-contrib-watch": "latest"
+  }
+}

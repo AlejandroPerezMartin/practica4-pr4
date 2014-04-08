@@ -65,6 +65,8 @@ strong {
 a {
     color                   : #00A67C;
     text-decoration         : none;
+    -webkit-transition      : all .3s ease-in-out;
+    transition              : all .3s ease-in-out;
 }
 
 h1, h2 {
@@ -151,15 +153,14 @@ table tr:nth-child(odd) {
 .routes-list a {
     color                   : #444;
     display                 : block;
+    font-weight             : bold;
     padding                 : 1em 2em;
     text-shadow             : 0 1px 0 #FFF;
-    -webkit-transition      : all .3s ease-in-out;
-    transition              : all .3s ease-in-out;
-    font-weight             : bold;
 }
 
 .routes-list a:hover,
-.routes-list a:focus {
+.routes-list a:focus,
+.summary tr:first-child {
     background              : #69CFB5;
     color                   : #FFF;
     text-shadow             : 0 1px 0 #006C51;
@@ -194,8 +195,6 @@ table tr:nth-child(odd) {
     padding                 : .5em 1em;
     text-align              : center;
     text-shadow             : 0 2px 0 #006C51;
-    -webkit-transition      : all .3s ease-in-out;
-    transition              : all .3s ease-in-out;
 }
 
 .button:hover,
@@ -242,6 +241,28 @@ table tr {
     padding                 : 0;
 }
 
+.summary {
+    font-size               : 1.2em;
+}
+
+.summary th {
+    font-size               : 1.25em;
+}
+
+.summary tr:first-child th {
+    padding                 : .5em 0;
+}
+
+.summary a {
+    color                   : #006C51;
+}
+
+.summary a:hover,
+.summary a:focus {
+    border-bottom           : 1px solid #00A67C;
+    color:                  : #175E45;
+}
+
 
 /*------------------------------------*\
     $FOOTER
@@ -262,10 +283,10 @@ footer {
 \*------------------------------------*/
 @media print {
     body {
-    background              : #FFF;
+        background          : #FFF;
     }
 
     body:before {
-    display                 : none;
+        display             : none;
     }
 }
