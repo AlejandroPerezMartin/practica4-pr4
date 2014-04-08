@@ -1,7 +1,7 @@
 {
   "name": "practica4",
   "author": "Alejandro Perez Martin",
-  "description": "Small project for university subject",
+  "description": "Small project for university",
   "main": "index.html",
   "version": "1.0.0",
   "devDependencies": {
