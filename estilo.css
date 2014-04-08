@@ -1,0 +1,271 @@
+
+/*------------------------------------*\
+    $FONT
+\*------------------------------------*/
+@import url(http://fonts.googleapis.com/css?family=Lustria|Lato:300);
+
+
+/*------------------------------------*\
+    $ERIC MEYER'S CSS RESET
+\*------------------------------------*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+
+/*------------------------------------*\
+    $GENERAL
+\*------------------------------------*/
+* {
+    -moz-box-sizing         : border-box;
+    box-sizing              : border-box;
+}
+
+
+body {
+    background              : url("img/bg.jpg") no-repeat center center fixed;
+    background-size         : cover;
+    color                   : #333;
+    font                    : 1em/100% 'Lato', sans-serif;
+    letter-spacing          : .02rem;
+    line-height             : 1.5;
+}
+
+body:before {
+    background              : url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAQAAADYv8WvAAAAEUlEQVQI12NgePyfgeE/EAIAFBUD4aE/TggAAAAASUVORK5CYII=) center center fixed transparent;
+    content                 : "";
+    height                  : 100%;
+    left                    : 0;
+    position                : fixed;
+    top                     : 0;
+    width                   : 100%;
+    z-index                 : -20;
+}
+
+
+/*------------------------------------*\
+    $SECTION
+\*------------------------------------*/
+section {
+    background              : rgba(255,255,255,1);
+    -webkit-box-shadow      : 0 0 2em rgba(0,0,0,.7);
+    -moz-box-shadow         : 0 0 2em rgba(0,0,0,.7);
+    box-shadow              : 0 0 2em rgba(0,0,0,.7);
+    padding                 : 2em 5em 0 5em;
+    margin                  : 0 auto;
+    max-width               : 52.5em; /* 840px/16px = 52.5em */
+}
+
+
+/*------------------------------------*\
+    $TEXT ELEMENTS
+\*------------------------------------*/
+strong {
+    font-weight             : bold;
+}
+
+a {
+    color                   : #00A67C;
+    text-decoration         : none;
+}
+
+h1, h2 {
+    font-family             : 'Lustria', serif;
+}
+
+h1 {
+    font-weight             : bold;
+    font-size               : 2.75em;
+    line-height             : 2;
+    margin-bottom           : .5em;
+}
+
+h2 {
+    font-size               : 2em;
+    font-weight             : bold;
+    margin-bottom           : 1.5em;
+}
+
+.description {
+    font-weight             : bold;
+    font-size               : 1.5em;
+    line-height             : 1.5;
+    margin-bottom           : 2em;
+}
+
+ul {
+    padding-left            : 1.25em;
+    list-style-type         : square;
+}
+
+section p,
+ul li {
+    font-size               : 1.375em;
+    margin-bottom           : 1.875em;
+}
+
+section img {
+    height                  : auto;
+    max-width               : 100%;
+}
+
+section figure {
+    margin-bottom           : 2.5em;
+}
+
+.main-image img {
+    width                   : 100%;
+    height                  : auto;
+}
+
+section figure > figcaption {
+    color                   : #666;
+    font-style              : italic;
+}
+
+/* List */
+.routes-list {
+    list-style-type         : none;
+    margin-bottom           : -.25em;
+    padding                 : 0;
+}
+
+.routes-list li {
+    margin                  : 0;
+    text-align              : center;
+}
+
+.routes-list li:first-child,
+.routes-list li:first-child a {
+    border-radius           : .5em .5em 0 0;
+}
+
+.routes-list li:nth-child(even),
+table tr:nth-child(even) {
+    background              : #CCF0E7;
+}
+
+.routes-list > li:nth-child(odd),
+table tr:nth-child(odd) {
+    background              : #E6F5F1;
+}
+
+.routes-list a {
+    color                   : #444;
+    display                 : block;
+    padding                 : 1em 2em;
+    text-shadow             : 0 1px 0 #FFF;
+    -webkit-transition      : all .3s ease-in-out;
+    transition              : all .3s ease-in-out;
+    font-weight             : bold;
+}
+
+.routes-list a:hover,
+.routes-list a:focus {
+    background              : #69CFB5;
+    color                   : #FFF;
+    text-shadow             : 0 1px 0 #006C51;
+}
+
+/* Alignment */
+.align-left {
+    float                   : left;
+    margin                  : 0 1em 1em 0;
+}
+
+.align-right {
+    float                   : right;
+    margin                  : 0 0 1em 1em;
+}
+
+
+/*------------------------------------*\
+    $BUTTON
+\*------------------------------------*/
+.button {
+    background              : #00A67C;
+    border-radius           : 5px 5px 5px 5px;
+    -webkit-box-shadow      : 0 6px 0 0 #1F7C65;
+    -moz-box-shadow         : 0 6px 0 0 #1F7C65;
+    box-shadow              : 0 6px 0 0 #1F7C65;
+    color                   : #FFF;
+    display                 : block;
+    font-size               : 1.5em;
+    font-weight             : bold;
+    margin-bottom           : 1.5em;
+    padding                 : .5em 1em;
+    text-align              : center;
+    text-shadow             : 0 2px 0 #006C51;
+    -webkit-transition      : all .3s ease-in-out;
+    transition              : all .3s ease-in-out;
+}
+
+.button:hover,
+.button:focus {
+    background              : #1F7C65;
+    -webkit-box-shadow      : 0 6px 0 0 #175E45;
+    -moz-box-shadow         : 0 6px 0 0 #175E45;
+    box-shadow              : 0 6px 0 0 #175E45;
+    text-shadow             : 0 2px 0 #175E45;
+}
+
+.button:active {
+    background              : #175E45;
+    -webkit-box-shadow      : 0 6px 0 0 #175E45, inset 0 5px 10px 0 rgba(0,0,0,.4);
+    -moz-box-shadow         : 0 6px 0 0 #175E45, inset 0 5px 10px 0 rgba(0,0,0,.4);
+    box-shadow              : 0 6px 0 0 #175E45, inset 0 5px 10px 0 rgba(0,0,0,.4);
+    color                   : #DDD;
+    text-shadow             : 0 -1px 0 #000;
+    -webkit-transition      : none;
+    transition              : none;
+}
+
+
+/*------------------------------------*\
+    $TABLE
+\*------------------------------------*/
+table {
+    font-size               : 1.5em;
+    margin-bottom           : 2.5em;
+    text-align              : center;
+    width                   : 100%;
+}
+
+table tr,
+table td {
+    padding                 : .75em;
+}
+
+table th {
+    font-weight             : bold;
+}
+
+table tr {
+    padding                 : 0;
+}
+
+
+/*------------------------------------*\
+    $FOOTER
+\*------------------------------------*/
+footer {
+    color                   : #777;
+    border-top              : 1px solid #BBB;
+    font-family             : 'Lustria', serif;
+    font-size               : 1.125em;
+    padding                 : 1.5em 0;
+    text-align              : center;
+    text-shadow             : 0 1px 0 #FFF;
+}
+
+
+/*------------------------------------*\
+    $PRINT
+\*------------------------------------*/
+@media print {
+    body {
+    background              : #FFF;
+    }
+
+    body:before {
+    display                 : none;
+    }
+}
