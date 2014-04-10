@@ -1,6 +1,6 @@
 
 /*------------------------------------*\
-    $FONT
+    $FONTS
 \*------------------------------------*/
 @import url(http://fonts.googleapis.com/css?family=Lustria|Lato:300);
 
@@ -19,9 +19,8 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
     box-sizing              : border-box;
 }
 
-
 body {
-    background              : url("img/bg.jpg") no-repeat center center fixed;
+    background              : url("img/bg.jpg") no-repeat center center fixed #CCC;
     background-size         : cover;
     color                   : #333;
     font                    : 1em/100% 'Lato', sans-serif;
@@ -113,7 +112,7 @@ section figure {
     margin-bottom           : 2.5em;
 }
 
-.main-image img {
+section figure > img {
     width                   : 100%;
     height                  : auto;
 }
@@ -260,7 +259,6 @@ table tr {
 .summary a:hover,
 .summary a:focus {
     border-bottom           : 1px solid #00A67C;
-    color:                  : #175E45;
 }
 
 
